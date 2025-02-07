@@ -1,0 +1,8 @@
+
+PROGRAM:
+set.seed(123)
+random_vector <- sample(-50:50, 10, replace = TRUE)
+print(random_vector)
+
+OUTPUT:
+[1] -20  28   0 -37  16  -9  -1  -8  50 -37
