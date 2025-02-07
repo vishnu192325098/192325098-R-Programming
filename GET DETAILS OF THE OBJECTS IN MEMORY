@@ -1,0 +1,19 @@
+PROGRAM:
+get_memory_objects_details <- function() {
+  objects <- ls()
+  object_details <- data.frame(
+    Object = character(),
+    Size = numeric(),
+    stringsAsFactors = FALSE
+  )
+  for (object in objects) {
+    object_size <- object.size(get(object))
+    object_details <- rbind(object_details, data.frame(Object = object, Size = object_size))
+  }
+  print(object_details)
+}
+get_memory_objects_details()
+
+OUTPUT:
+[1] Object Size  
+<0 rows> (or 0-length row.names)
