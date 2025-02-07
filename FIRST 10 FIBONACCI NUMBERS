@@ -1,0 +1,16 @@
+
+PROGRAM:
+fibonacci <- function(n) {
+  fib <- numeric(n)
+  fib[1] <- 1
+  fib[2] <- 1
+  for (i in 3:n) {
+    fib[i] <- fib[i - 1] + fib[i - 2]
+  }
+  return(fib)
+}
+first_10_fib <- fibonacci(10)
+print(first_10_fib)
+
+OUTPUT:
+ [1]  1  1  2  3  5  8 13 21 34 55
