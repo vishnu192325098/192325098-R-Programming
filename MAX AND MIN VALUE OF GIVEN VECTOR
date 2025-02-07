@@ -1,0 +1,14 @@
+PROGRAM:
+find_max_min <- function(vec) {
+  max_value <- max(vec)
+  min_value <- min(vec)
+  return(list(maximum = max_value, minimum = min_value))
+}
+example_vector <- c(10, 23, 5, 99, 17, 42, 3)
+max_min_values <- find_max_min(example_vector)
+cat("Maximum value in the vector:", max_min_values$maximum, "\n")
+cat("Minimum value in the vector:", max_min_values$minimum, "\n")
+
+OUTPUT:
+Maximum value in the vector: 99 
+Minimum value in the vector: 3 
